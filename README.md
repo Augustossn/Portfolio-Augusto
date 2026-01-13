@@ -1,73 +1,138 @@
-# Welcome to your Lovable project
+# Portfólio – Augusto Soares de Souza
 
-## Project info
+Um **portfólio pessoal moderno** desenvolvido como **Single Page Application (SPA)**, focado em demonstrar competências **Fullstack**, com **design contemporâneo** e **animações fluidas**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🎨 Conceito Visual
 
-There are several ways of editing your application.
+O projeto segue uma estética **Glassmorphism em Dark Mode**, utilizando:
 
-**Use Lovable**
+* **Cores**: tons de cinza chumbo / preto fosco com detalhes em neon (roxo e ciano)
+* **Efeitos**: glassmorphism (vidro fosco) nos cards, trazendo profundidade e sofisticação
+* **Animações**: transições suaves com *fade-in* conforme o scroll da página
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠 Tecnologias Utilizadas
 
-**Use your preferred IDE**
+| Categoria               | Tecnologia           |
+| ----------------------- | -------------------- |
+| **Framework**           | React 18             |
+| **Build Tool**          | Vite                 |
+| **Linguagem**           | TypeScript           |
+| **Estilização**         | Tailwind CSS         |
+| **Componentes UI**      | shadcn/ui            |
+| **Animações**           | Framer Motion        |
+| **Efeito de Digitação** | react-type-animation |
+| **Ícones**              | Lucide React         |
+| **Roteamento**          | React Router DOM     |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📂 Estrutura do Projeto
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/
+│   ├── ui/                  # Componentes shadcn/ui
+│   ├── Navbar.tsx           # Navegação responsiva com menu mobile
+│   ├── HeroSection.tsx      # Seção inicial com efeito de digitação
+│   ├── TimelineSection.tsx  # Linha do tempo profissional
+│   ├── ProjectsSection.tsx  # Portfólio de projetos
+│   ├── SkillsSection.tsx    # Grid de tecnologias
+│   ├── ContactSection.tsx   # Seção de contato
+│   └── Footer.tsx           # Rodapé com links sociais
+├── pages/
+│   ├── Index.tsx            # Página principal (composição das seções)
+│   └── NotFound.tsx         # Página 404
+├── hooks/                   # Custom hooks
+├── lib/                     # Utilitários
+└── index.css                # Variáveis CSS e estilos globais
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🕸 Seções do Site
 
-**Use GitHub Codespaces**
+### 🚀 Hero Section
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+* Nome com **gradiente animado**
+* Subtítulo dinâmico com **efeito de digitação** (*TypeAnimation*)
+* **CTAs** para projetos e download de CV
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+### 🕒 Timeline (Sobre)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+* Linha do tempo visual da jornada profissional
+* Marcos:
 
-## How can I deploy this project?
+  * UCB
+  * Projetos Acadêmicos
+  * CAESB
+  * GIS Tecnologia
+* Animações de entrada com **Framer Motion**
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+### 📁 Projetos
 
-Yes, you can!
+* Cards com efeito **glassmorphism**
+* Projeto em destaque (*featured*)
+* Tags com tecnologias utilizadas
+* Links para **GitHub** e **Demo**
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### 🧠 Skills
+
+* Divisão entre **Core** e **Ferramentas**
+* Ícones via **Devicon (CDN)**
+* Estatísticas de experiência e projetos
+
+---
+
+### 📬 Contato
+
+* Card com **borda em gradiente**
+* CTA direto para email
+* Links para redes sociais
+
+---
+
+## 📱 Responsividade
+
+O site é totalmente responsivo, adaptando-se a:
+
+* **Desktop** (1024px+)
+* **Tablet** (768px – 1023px)
+* **Mobile** (< 768px)
+
+O menu de navegação transforma-se em **hamburger menu** no mobile, com animações suaves.
+
+---
+
+## ⚡ Performance
+
+* Lazy loading de imagens
+* Animações otimizadas com **Framer Motion**
+* Bundle otimizado pelo **Vite**
+* **CSS purge** com Tailwind
+
+---
+
+## 🎨 Sistema de Design
+
+As cores e tokens visuais são definidos em:
+
+* `src/index.css`
+* `tailwind.config.ts`
+
+Isso permite **customização fácil do tema** através de variáveis CSS em **HSL**.
+
+---
+
+## 📄 Licença
+
+Este projeto é de **uso pessoal**, destinado como **portfólio profissional**.
