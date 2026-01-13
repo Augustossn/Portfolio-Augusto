@@ -31,26 +31,43 @@ O projeto segue uma estética **Glassmorphism em Dark Mode**, utilizando:
 ---
 
 ## 📂 Estrutura do Projeto
-
 ```
-src/
-├── components/
-│   ├── ui/                  # Componentes shadcn/ui
-│   ├── Navbar.tsx           # Navegação responsiva com menu mobile
-│   ├── HeroSection.tsx      # Seção inicial com efeito de digitação
-│   ├── TimelineSection.tsx  # Linha do tempo profissional
-│   ├── ProjectsSection.tsx  # Portfólio de projetos
-│   ├── SkillsSection.tsx    # Grid de tecnologias
-│   ├── ContactSection.tsx   # Seção de contato
-│   └── Footer.tsx           # Rodapé com links sociais
-├── pages/
-│   ├── Index.tsx            # Página principal (composição das seções)
-│   └── NotFound.tsx         # Página 404
-├── hooks/                   # Custom hooks
-├── lib/                     # Utilitários
-└── index.css                # Variáveis CSS e estilos globais
+.
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── ui/ # Componentes shadcn/ui
+│ │ ├── ContactSection.tsx # Seção de contato
+│ │ ├── Footer.tsx # Rodapé com links sociais
+│ │ ├── HeroSection.tsx # Seção inicial com efeito de digitação
+│ │ ├── Navbar.tsx # Navegação responsiva
+│ │ ├── NavLink.tsx # Links reutilizáveis da navbar
+│ │ ├── ProjectsSection.tsx # Portfólio de projetos
+│ │ ├── SkillsSection.tsx # Grid de tecnologias
+│ │ └── TimelineSection.tsx # Linha do tempo profissional
+│ ├── hooks/ # Custom hooks
+│ ├── lib/ # Utilitários e helpers
+│ ├── pages/ # Páginas da aplicação
+│ ├── App.css # Estilos globais do App
+│ ├── App.tsx # Componente raiz
+│ ├── index.css # Variáveis CSS e estilos globais
+│ ├── main.tsx # Entry point da aplicação
+│ └── vite-env.d.ts # Tipagens do Vite
+├── .gitignore
+├── bun.lock
+├── components.json # Configuração do shadcn/ui
+├── eslint.config.js # Configuração do ESLint
+├── index.html # HTML base
+├── package.json
+├── package-lock.json
+├── postcss.config.js # Configuração do PostCSS
+├── README.md
+├── tailwind.config.ts # Configuração do Tailwind CSS
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts # Configuração do Vite
 ```
-
 ---
 
 ## 🕸 Seções do Site
