@@ -81,8 +81,7 @@ src/
 * Cards com efeito **glassmorphism**
 * Projeto em destaque (*featured*)
 * Tags com tecnologias utilizadas
-* Links para **GitHub** e **Demo**
-
+* Links para **GitHub** 
 ---
 
 ### 🧠 Skills
