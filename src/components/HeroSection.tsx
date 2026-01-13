@@ -129,14 +129,17 @@ const HeroSection = () => {
               Ver Projetos
               <ChevronDown className="ml-2 h-5 w-5" />
             </Button>
+            {/* Botão envolvido por uma tag 'a' para realizar o download */}
+            <a href="/Currículo Augusto Soares.pdf" download="Augusto_Soares_CV.pdf">
             <Button 
-              variant="outline"
-              size="lg"
-              className="border-muted-foreground/30 hover:border-primary hover:text-primary px-8 py-6 text-lg"
+                variant="outline"
+                size="lg"
+                className="border-muted-foreground/30 hover:border-primary hover:text-primary px-8 py-6 text-lg w-full sm:w-auto" // Adicionei w-full para mobile
             >
-              <Download className="mr-2 h-5 w-5" />
-              Baixar CV
+                <Download className="mr-2 h-5 w-5" />
+                Baixar CV
             </Button>
+            </a>
           </motion.div>
 
           {/* Social links */}
