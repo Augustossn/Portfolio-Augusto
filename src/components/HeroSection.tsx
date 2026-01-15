@@ -125,7 +125,7 @@ const HeroSection = () => {
             <Button 
               onClick={scrollToProjects}
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 neon-glow px-8 py-6 text-lg font-semibold"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 neon-glow px-8 py-6 text-lg w-full font-semibold"
             >
               Ver Projetos
               <ChevronDown className="ml-2 h-5 w-5" />
