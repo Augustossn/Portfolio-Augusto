@@ -2,6 +2,14 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Github, Linkedin, Mail, ChevronDown, Download } from "lucide-react";
 import { Button } from "./ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const HeroSection = () => {
   const scrollToProjects = () => {
@@ -10,7 +18,6 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           className="absolute top-20 left-10 w-72 h-72 rounded-full bg-primary/10 blur-3xl"
@@ -37,7 +44,6 @@ const HeroSection = () => {
         />
       </div>
 
-      {/* Grid pattern overlay */}
       <div 
         className="absolute inset-0 opacity-[0.03]"
         style={{
@@ -56,7 +62,6 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          {/* Badge */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -67,7 +72,6 @@ const HeroSection = () => {
             <span className="text-sm text-muted-foreground">Disponível para projetos</span>
           </motion.div>
 
-          {/* Name */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -78,7 +82,6 @@ const HeroSection = () => {
             <span className="gradient-text">Soares</span>
           </motion.h1>
 
-          {/* Typing animation */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -88,11 +91,11 @@ const HeroSection = () => {
             <span className="text-xl md:text-2xl lg:text-3xl font-mono text-muted-foreground">
               <TypeAnimation
                 sequence={[
-                  "Fullstack Developer",
+                  "Desenvolvedor Fullstack",
                   2000,
-                  "Systems Analyst",
+                  "Analista de Sistemas",
                   2000,
-                  "Problem Solver",
+                  "Resolvedor de Problemas",
                   2000,
                 ]}
                 wrapper="span"
@@ -103,7 +106,6 @@ const HeroSection = () => {
             </span>
           </motion.div>
 
-          {/* Description */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -114,7 +116,6 @@ const HeroSection = () => {
             design moderno e paixão por tecnologia.
           </motion.p>
 
-          {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -129,20 +130,51 @@ const HeroSection = () => {
               Ver Projetos
               <ChevronDown className="ml-2 h-5 w-5" />
             </Button>
-            {/* Botão envolvido por uma tag 'a' para realizar o download */}
-            <a href="/Currículo Augusto Soares.pdf" download="Augusto_Soares_CV.pdf">
-            <Button 
-                variant="outline"
-                size="lg"
-                className="border-muted-foreground/30 hover:border-primary hover:text-primary px-8 py-6 text-lg w-full sm:w-auto" // Adicionei w-full para mobile
-            >
-                <Download className="mr-2 h-5 w-5" />
-                Baixar CV
-            </Button>
-            </a>
+
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button 
+                  variant="outline"
+                  size="lg"
+                  className="border-muted-foreground/30 hover:border-primary hover:text-primary px-8 py-6 text-lg w-full sm:w-auto"
+                >
+                  <Download className="mr-2 h-5 w-5" />
+                  Baixar CV
+                </Button>
+              </DialogTrigger>
+              
+              <DialogContent className="sm:max-w-md bg-black/90 border-white/10 backdrop-blur-xl">
+                <DialogHeader>
+                  <DialogTitle className="text-xl text-center text-foreground">
+                    Selecione o Idioma
+                  </DialogTitle>
+                  <DialogDescription className="text-center text-muted-foreground">
+                    Escolha a versão do currículo que deseja baixar.
+                  </DialogDescription>
+                </DialogHeader>
+                
+                <div className="grid grid-cols-2 gap-4 py-4">
+                  <a href="/Currículo Augusto Soares.pdf" download="Augusto_Soares_CV_PT.pdf" className="w-full">
+                    <Button variant="outline" className="w-full h-24 flex flex-col gap-2 hover:border-primary hover:bg-primary/10 transition-all group">
+                      <span className="text-2xl">🇧🇷</span>
+                      <span className="font-semibold group-hover:text-primary">Português</span>
+                      <span className="text-xs text-muted-foreground">Versão PDF</span>
+                    </Button>
+                  </a>
+
+                  <a href="/Augusto's CV.pdf" download="Augusto_Soares_CV_EN.pdf" className="w-full">
+                    <Button variant="outline" className="w-full h-24 flex flex-col gap-2 hover:border-primary hover:bg-primary/10 transition-all group">
+                      <span className="text-2xl">🇺🇸</span>
+                      <span className="font-semibold group-hover:text-primary">English</span>
+                      <span className="text-xs text-muted-foreground">PDF Version</span>
+                    </Button>
+                  </a>
+                </div>
+              </DialogContent>
+            </Dialog>
+            
           </motion.div>
 
-          {/* Social links */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -170,7 +202,6 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

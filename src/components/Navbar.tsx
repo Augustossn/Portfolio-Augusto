@@ -40,7 +40,6 @@ const Navbar = () => {
       >
         <div className="container px-4">
           <div className="flex items-center justify-between h-16 md:h-20">
-            {/* Logo */}
             <motion.a
               href="#"
               className="text-xl md:text-2xl font-bold"
@@ -50,7 +49,6 @@ const Navbar = () => {
               <span className="gradient-text">S</span>
             </motion.a>
 
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
               {navItems.map((item) => (
                 <motion.button
@@ -63,15 +61,8 @@ const Navbar = () => {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
                 </motion.button>
               ))}
-              <Button
-                onClick={() => handleNavClick("#contato")}
-                className="bg-primary text-primary-foreground hover:bg-primary/90"
-              >
-                Contato
-              </Button>
             </div>
 
-            {/* Mobile Menu Button */}
             <Button
               variant="ghost"
               size="icon"
@@ -84,7 +75,6 @@ const Navbar = () => {
         </div>
       </motion.nav>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div

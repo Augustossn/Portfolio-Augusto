@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Briefcase, Code, Rocket, Laptop } from "lucide-react";
 
-// Lista ÚNICA e definitiva
 const timelineItems = [
   {
     year: "2023",
@@ -60,7 +59,6 @@ const TimelineSection = () => {
         </motion.div>
 
         <div className="relative max-w-3xl mx-auto">
-          {/* Linha vertical central */}
           <div className="timeline-line" />
 
           {timelineItems.map((item, index) => (
@@ -72,12 +70,10 @@ const TimelineSection = () => {
               viewport={{ once: true }}
               className="relative pl-16 pb-12 last:pb-0"
             >
-              {/* Ponto na linha do tempo */}
               <div className="absolute left-[18px] top-1">
                 <div className="timeline-dot" />
               </div>
 
-              {/* Badge do Ano */}
               <motion.div
                 className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-mono mb-3"
                 whileHover={{ scale: 1.05 }}
@@ -85,7 +81,6 @@ const TimelineSection = () => {
                 {item.year}
               </motion.div>
 
-              {/* Cartão de Conteúdo */}
               <motion.div
                 className="glass-card-hover p-6"
                 whileHover={{ x: 10 }}

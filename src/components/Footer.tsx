@@ -8,7 +8,6 @@ const Footer = () => {
     <footer className="py-8 border-t border-border/50">
       <div className="container px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          {/* Copyright */}
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -18,7 +17,6 @@ const Footer = () => {
             © {currentYear} Augusto Soares
           </motion.p>
 
-          {/* Social Links */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

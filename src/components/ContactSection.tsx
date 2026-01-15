@@ -5,7 +5,6 @@ import { Button } from "./ui/button";
 const ContactSection = () => {
   return (
     <section id="contato" className="py-24 relative">
-      {/* Background gradient */}
       <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary/5 to-transparent" />
 
       <div className="container px-4 relative z-10">
@@ -33,7 +32,6 @@ const ContactSection = () => {
             className="glass-card p-8 md:p-12"
           >
             <div className="grid md:grid-cols-2 gap-12">
-              {/* Contact Info */}
               <div>
                 <h3 className="text-2xl font-bold mb-6">Informações de Contato</h3>
                 <div className="space-y-6">
@@ -67,7 +65,6 @@ const ContactSection = () => {
                   </motion.div>
                 </div>
 
-                {/* Social Links */}
                 <div className="mt-8">
                   <p className="text-sm text-muted-foreground mb-4">Me encontre também em:</p>
                   <div className="flex gap-4">
@@ -93,7 +90,6 @@ const ContactSection = () => {
                 </div>
               </div>
 
-              {/* Quick Message CTA */}
               <div className="flex flex-col justify-center items-center text-center">
                 <div className="glass-card p-8 w-full gradient-border">
                   <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
