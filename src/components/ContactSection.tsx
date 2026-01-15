@@ -36,7 +36,7 @@ const ContactSection = () => {
                 <h3 className="text-2xl font-bold mb-6">Informações de Contato</h3>
                 <div className="space-y-6">
                   <motion.a
-                    href="mailto:augusto.soares@email.com"
+                    href="mailto:augustos.souza@yahoo.com.br"
                     className="flex items-center gap-4 group"
                     whileHover={{ x: 10 }}
                   >
@@ -46,7 +46,7 @@ const ContactSection = () => {
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
                       <p className="text-foreground group-hover:text-primary transition-colors">
-                        augusto.soares@email.com
+                        augustos.souza@yahoo.com.br
                       </p>
                     </div>
                   </motion.a>
