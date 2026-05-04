@@ -3,39 +3,39 @@ import { GraduationCap, Briefcase, Code, Rocket, Laptop } from "lucide-react";
 
 const timelineItems = [
   {
-    year: "2023",
-    title: "Projetos Acadêmicos",
-    description: "Desenvolvimento de projetos práticos utilizando C#, Java e tecnologias web modernas, construindo a base técnica.",
-    icon: Code,
-    type: "project"
-  },
-  {
-    year: "Jan 2024",
-    title: "Início na UCB",
-    description: "Ingresso no curso de Análise e Desenvolvimento de Sistemas na Universidade Católica de Brasília (UCB).",
-    icon: GraduationCap,
-    type: "education"
-  },
-  {
-    year: "Nov 2024",
-    title: "Bincom Global",
-    description: "Desenvolvedor de Software focado em backend .NET, manutenção de banco de dados SQL e resolução de bugs (Scrum).",
-    icon: Laptop,
-    type: "work"
-  },
-  {
-    year: "Mar 2025",
-    title: "Freelancer - GIS Tecnologia",
-    description: "Desenvolvedor Fullstack .NET. Criação de aplicações web completas com ASP.NET Core, SQL Server e integrações de API.",
+    year: "Mar 2026 - Atual",
+    title: "Dali - Desenvolvedor Full Stack",
+    description: "Desenvolvimento de plataforma No-Code (IDE visual) em Python e Vue 3 com IA Agents, VueFlow e SVG Animations. Construção de dashboards financeiros estratégicos integrados a ERPs.",
     icon: Rocket,
     type: "work"
   },
   {
-    year: "Set 2025",
-    title: "Estágio na CAESB",
-    description: "Atuação em Análise e Desenvolvimento. Implementação de automações de dados que reduziram drasticamente o tempo de processos manuais.",
+    year: "Set 2025 - Mar 2026",
+    title: "CAESB - Estagiário em Desenvolvimento",
+    description: "Automação de rotinas com C# e Python, reduzindo processamento interno em 50%. Manipulação de grandes volumes de dados SQL Server.",
     icon: Briefcase,
     type: "work"
+  },
+  {
+    year: "Mar 2025 - Atual",
+    title: "GIS Tecnologia - Desenvolvedor Full Stack",
+    description: "APIs RESTful com .NET Core e modelagem relacional para regras financeiras complexas. Otimização avançada de consultas SQL.",
+    icon: Laptop,
+    type: "work"
+  },
+  {
+    year: "Nov 2024 - Jan 2025",
+    title: "Bincom Global - Desenvolvedor Software",
+    description: "Manutenção de sistemas legados .NET e evolução de consultas complexas seguindo ritos ágeis.",
+    icon: Code,
+    type: "work"
+  },
+  {
+    year: "Jan 2024",
+    title: "Início na UCB",
+    description: "Análise e Desenvolvimento de Sistemas na Universidade Católica de Brasília.",
+    icon: GraduationCap,
+    type: "education"
   },
 ];
 

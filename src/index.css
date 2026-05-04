@@ -84,16 +84,18 @@
   }
 
   .glass-card-hover {
-    @apply glass-card transition-all duration-500;
+    @apply glass-card;
+    transition: border-color 0.5s ease, box-shadow 0.5s ease, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, box-shadow;
   }
 
   .glass-card-hover:hover {
     border-color: hsl(var(--primary) / 0.5);
     box-shadow: 
-      0 8px 32px hsl(var(--background) / 0.5),
+      0 12px 40px hsl(var(--background) / 0.6),
       0 0 40px hsl(var(--primary) / 0.15),
       inset 0 1px 0 hsl(var(--foreground) / 0.1);
-    transform: translateY(-4px);
+    transform: translateY(-6px);
   }
 
   .neon-text {

@@ -18,9 +18,10 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          className="absolute top-20 left-10 w-72 h-72 rounded-full bg-primary/10 blur-3xl"
+          className="absolute top-20 left-10 w-72 h-72 rounded-full bg-primary/10 blur-[80px]"
+          style={{ willChange: "transform" }}
           animate={{ 
             x: [0, 50, 0], 
             y: [0, 30, 0],
@@ -29,7 +30,8 @@ const HeroSection = () => {
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-accent/10 blur-3xl"
+          className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-accent/10 blur-[100px]"
+          style={{ willChange: "transform" }}
           animate={{ 
             x: [0, -30, 0], 
             y: [0, -50, 0],
@@ -38,7 +40,8 @@ const HeroSection = () => {
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px]"
+          style={{ willChange: "transform" }}
           animate={{ rotate: 360 }}
           transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
         />
@@ -91,11 +94,13 @@ const HeroSection = () => {
             <span className="text-xl md:text-2xl lg:text-3xl font-mono text-muted-foreground">
               <TypeAnimation
                 sequence={[
-                  "Desenvolvedor Fullstack",
+                  "Desenvolvedor Full Stack",
+                  2000,
+                  "Especialista .NET & Python",
+                  2000,
+                  "No-Code & AI Architect",
                   2000,
                   "Analista de Sistemas",
-                  2000,
-                  "Resolvedor de Problemas",
                   2000,
                 ]}
                 wrapper="span"
@@ -112,8 +117,9 @@ const HeroSection = () => {
             transition={{ delay: 0.7, duration: 0.8 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
-            Transformando ideias em soluções digitais com código limpo, 
-            design moderno e paixão por tecnologia.
+            Especializado em APIs escaláveis, automação de processos e 
+            interfaces de alta fidelidade. Transformando dados complexos em 
+            decisões estratégicas.
           </motion.p>
 
           <motion.div
