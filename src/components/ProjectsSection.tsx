@@ -4,15 +4,6 @@ import { Button } from "./ui/button";
 
 const projects = [
   {
-    title: "Plataforma No-Code & IA Agents",
-    description: "IDE visual para orquestração de fluxos com lógica condicional e agentes de IA. Desenvolvida com interfaces de alta fidelidade em VueFlow e SVG Animations.",
-    tech: ["Python", "Vue 3", "VueFlow", "AI Agents", "SVG"],
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop",
-    github: "https://github.com/Augustossn",
-    site: "https://portfolio-augusto-ruddy.vercel.app/",
-    featured: true,
-  },
-  {
     title: "Study Planner",
     description: "Plataforma Full Stack para gestão de produtividade nos estudos. Permite criar planos personalizados, acompanhar progresso e definir metas estratégicas.",
     tech: ["Java", "Spring Boot", "React", "PostgreSQL", "Docker"],
@@ -27,7 +18,7 @@ const projects = [
     tech: ["Python", "LLMs", "OpenAI", "Flask", "React"],
     image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&h=500&fit=crop",
     github: "https://github.com/Augustossn/Classificador-de-Email",
-    featured: false,
+    featured: true,
   },
   {
     title: "Gerenciador Financeiro Full Stack",
