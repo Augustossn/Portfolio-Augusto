@@ -126,7 +126,7 @@ const HeroSection = () => {
                       <span className="text-2xl">🇺🇸</span>
                       <span className="font-semibold group-hover:text-primary">English</span>
                       <span className="text-xs text-muted-foreground">PDF Version</span>
-                    </a>
+                    </Button>
                   </a>
                 </div>
               </DialogContent>
