@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,41 +6,41 @@
 
 @layer base {
   :root {
-    --background: 220 20% 6%;
-    --foreground: 210 40% 98%;
+    --background: 42 33% 97%;
+    --foreground: 222 31% 14%;
 
-    --card: 220 20% 10%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 31% 14%;
 
-    --popover: 220 20% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 31% 14%;
 
-    --primary: 180 100% 50%;
-    --primary-foreground: 220 20% 6%;
+    --primary: 222 49% 20%;
+    --primary-foreground: 42 33% 97%;
 
-    --secondary: 220 20% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 38 27% 91%;
+    --secondary-foreground: 222 31% 14%;
 
-    --muted: 220 15% 20%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 36 20% 92%;
+    --muted-foreground: 219 14% 41%;
 
-    --accent: 280 100% 60%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 18 74% 43%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 180 100% 50%;
+    --border: 33 17% 83%;
+    --input: 33 17% 83%;
+    --ring: 18 74% 43%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     /* Custom tokens */
-    --glow-primary: 180 100% 50%;
-    --glow-accent: 280 100% 60%;
-    --glass-bg: 220 20% 12%;
-    --glass-border: 220 15% 25%;
+    --glow-primary: 18 74% 43%;
+    --glow-accent: 222 49% 20%;
+    --glass-bg: 0 0% 100%;
+    --glass-border: 33 17% 83%;
 
     --sidebar-background: 220 20% 8%;
     --sidebar-foreground: 210 40% 98%;
@@ -60,24 +60,16 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Manrope', sans-serif;
   }
 
   code, pre {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'DM Mono', monospace;
   }
 }
 
 @layer components {
-  .glass-card {
-    @apply relative overflow-hidden rounded-xl;
-    background: hsl(var(--glass-bg) / 0.8);
-    border: 1px solid hsl(var(--glass-border) / 0.5);
-    /* Reduced blur for performance */
-    backdrop-filter: blur(8px);
-    box-shadow: 0 4px 12px hsl(var(--background) / 0.5);
-    transform: translateZ(0); /* Hardware acceleration hint */
-  }
+  .glass-card { @apply border border-border bg-card; }
 
   .glass-card-hover {
     @apply glass-card;
@@ -87,27 +79,24 @@
 
   .glass-card-hover:hover {
     border-color: hsl(var(--primary) / 0.5);
-    transform: translateY(-4px) translateZ(0);
+    transform: translateY(-4px);
   }
 
   .neon-text {
     color: hsl(var(--primary));
-    /* Simplified text-shadow */
-    text-shadow: 0 0 8px hsl(var(--primary) / 0.5);
+    text-shadow: none;
   }
 
   .neon-glow {
     box-shadow: 0 0 15px hsl(var(--primary) / 0.3);
   }
 
-  .gradient-text {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(
-      135deg,
-      hsl(var(--primary)) 0%,
-      hsl(var(--accent)) 100%
-    );
-  }
+  .gradient-text { color: hsl(var(--accent)); }
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[0.18em] text-accent; }
+  .section-title { @apply text-3xl font-extrabold tracking-[-0.045em] text-foreground md:text-5xl; }
+  .section-copy { @apply mt-4 max-w-2xl text-base leading-7 text-muted-foreground md:text-lg; }
+  .paper-card { @apply border border-border bg-card shadow-[0_12px_35px_rgba(30,41,59,0.06)]; }
+  .link-arrow { @apply inline-flex items-center gap-2 text-sm font-bold text-foreground transition-colors hover:text-accent; }
 
   .timeline-line {
     @apply absolute left-6 top-0 bottom-0 w-px;
@@ -128,23 +117,6 @@
 }
 
 @layer utilities {
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  .animate-pulse-glow {
-    animation: pulse-glow 2s ease-in-out infinite;
-  }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px) translateZ(0); }
-  50% { transform: translateY(-10px) translateZ(0); }
-}
-
-@keyframes pulse-glow {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.7; }
 }
 
 /* Scrollbar */
