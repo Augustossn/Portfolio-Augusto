@@ -1,8 +1,42 @@
-import { motion } from "framer-motion";
-import { ArrowDownRight, Download, Github, Linkedin, Mail, Sparkles } from "lucide-react";
+import { ArrowDownRight, Download } from "lucide-react";
 
-const enter = { hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } };
+const steps = [
+  ["01", "Entendo o contexto", "Converto processos, regras e necessidades em uma proposta técnica clara."],
+  ["02", "Construo e integro", "Desenvolvo APIs, interfaces, integrações e fluxos de dados com foco em manutenção."],
+  ["03", "Valido a entrega", "Uso testes, revisão, depuração e automação de entrega para reduzir riscos."],
+];
 
 export default function HeroSection() {
-  return <section id="inicio" className="hero-shell relative overflow-hidden pt-32 md:pt-40"><div className="hero-grid"/><div className="hero-glow hero-glow-one"/><div className="hero-glow hero-glow-two"/><div className="relative mx-auto grid max-w-6xl gap-12 px-5 pb-20 md:grid-cols-[1.2fr_.8fr] md:px-8 md:pb-28"><motion.div initial="hidden" animate="visible" transition={{ staggerChildren: 0.1 }}><motion.div variants={enter} className="inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1.5 font-mono text-[11px] text-cyan-100"><Sparkles size={13}/> Full Stack · Brasília, Brasil</motion.div><motion.h1 variants={enter} className="mt-7 max-w-4xl text-5xl font-bold leading-[.96] tracking-[-.07em] text-white md:text-7xl">Eu transformo <span className="hero-emphasis">processos complexos</span> em software claro.</motion.h1><motion.p variants={enter} className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">Sou Augusto, desenvolvedor full stack com experiência em APIs, automação e produtos corporativos. Trabalho do requisito ao deploy, equilibrando velocidade, qualidade e impacto na operação.</motion.p><motion.div variants={enter} className="mt-9 flex flex-wrap gap-3"><a href="#projetos" className="hero-primary"><span>Ver projetos</span><ArrowDownRight size={18}/></a><a href="/Currículo Augusto Soares.pdf" download className="hero-secondary"><Download size={17}/> Currículo</a></motion.div></motion.div><motion.aside initial={{ opacity: 0, x: 18 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.25 }} className="hero-console self-end"><div className="flex items-center justify-between border-b border-white/10 pb-4"><p className="font-mono text-[11px] uppercase tracking-[.15em] text-slate-400">Stack em foco</p><span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_16px_rgba(74,222,128,.9)]"/></div><div className="mt-6 space-y-4"><p className="text-2xl font-semibold tracking-[-.045em] text-white">Back-end, dados e automação.</p><div className="flex flex-wrap gap-2">{["Java/Spring", "Python/Django", "C#/.NET", "React/Angular", "CI/CD"].map(item => <span key={item} className="hero-tag">{item}</span>)}</div></div><div className="mt-8 grid grid-cols-2 gap-3 border-t border-white/10 pt-5"><div><p className="font-mono text-xs text-cyan-200">30+</p><p className="mt-1 text-xs text-slate-400">entregas e endpoints</p></div><div><p className="font-mono text-xs text-cyan-200">80%</p><p className="mt-1 text-xs text-slate-400">redução operacional</p></div></div><div className="mt-7 flex gap-4 text-slate-400"><a aria-label="GitHub" href="https://github.com/Augustossn" target="_blank" rel="noreferrer" className="transition hover:text-cyan-200"><Github size={20}/></a><a aria-label="LinkedIn" href="https://www.linkedin.com/in/augusto-soares-de-souza-04a7482a6/" target="_blank" rel="noreferrer" className="transition hover:text-cyan-200"><Linkedin size={20}/></a><a aria-label="E-mail" href="mailto:augustos.souza@yahoo.com.br" className="transition hover:text-cyan-200"><Mail size={20}/></a></div></motion.aside></div></section>;
+  return (
+    <section id="inicio" className="border-b border-border bg-card pt-28 md:pt-36">
+      <div className="mx-auto grid max-w-6xl gap-12 px-5 pb-16 md:grid-cols-[1.05fr_.95fr] md:px-8 md:pb-20">
+        <div>
+          <p className="eyebrow">Desenvolvedor Full Stack · Brasília, DF</p>
+          <h1 className="mt-5 text-5xl font-bold leading-[.95] tracking-[-.07em] md:text-7xl">Augusto Soares de Souza</h1>
+          <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">
+            Desenvolvedor com atuação em back-end, integrações, automação e interfaces web. Trabalho com Java, Python/Django, C\#/.NET, React, Angular e bancos de dados relacionais.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a href="#projetos" className="inline-flex items-center gap-2 bg-primary px-5 py-3 font-semibold text-primary-foreground transition hover:bg-primary/90">
+              Ver projetos <ArrowDownRight size={18} />
+            </a>
+            <a href="/Currículo Augusto Soares.pdf" download className="inline-flex items-center gap-2 border border-border bg-background px-5 py-3 font-semibold transition hover:border-foreground/40">
+              <Download size={17} /> Currículo
+            </a>
+          </div>
+        </div>
+        <aside className="border-t border-border pt-5 md:self-end">
+          <p className="text-sm font-bold">Como eu trabalho</p>
+          <ol className="mt-4 divide-y divide-border">
+            {steps.map(([number, title, description]) => (
+              <li key={number} className="grid grid-cols-[2.5rem_1fr] gap-3 py-4 first:pt-0">
+                <span className="font-mono text-xs text-accent">{number}</span>
+                <div><p className="font-semibold">{title}</p><p className="mt-1 text-sm leading-6 text-muted-foreground">{description}</p></div>
+              </li>
+            ))}
+          </ol>
+        </aside>
+      </div>
+    </section>
+  );
 }

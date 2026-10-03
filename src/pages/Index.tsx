@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import ImpactSection from "@/components/ImpactSection";
 import TimelineSection from "@/components/TimelineSection";
+import EducationSection from "@/components/EducationSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
 import ContactSection from "@/components/ContactSection";
@@ -12,8 +12,8 @@ const Index = () => {
     <div className="min-h-screen bg-background overflow-x-hidden">
       <Navbar />
       <HeroSection />
-      <ImpactSection />
       <TimelineSection />
+      <EducationSection />
       <ProjectsSection />
       <SkillsSection />
       <ContactSection />
