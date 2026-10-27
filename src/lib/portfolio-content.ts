@@ -1,0 +1,93 @@
+export const pt = {
+  nav: ["Experiência", "Formação", "Projetos", "Tecnologias"],
+  contactLabel: "Contato", openMenu: "Abrir menu", closeMenu: "Fechar menu", languageLabel: "Idioma do portfólio",
+  title: "Augusto Soares | Desenvolvedor Full Stack",
+  description: "Portfólio de Augusto Soares: desenvolvimento full stack, APIs, integrações e automação de processos.",
+  hero: {
+    eyebrow: "Desenvolvedor Full Stack · Brasília, DF",
+    description: "Desenvolvedor com atuação em back-end, integrações, automação e interfaces web. Trabalho com Java, Python/Django, C#/.NET, React, Angular e bancos de dados relacionais.",
+    projects: "Ver projetos", resume: "Currículo (português)", work: "Como eu trabalho",
+    steps: [
+      ["01", "Entendo o contexto", "Converto processos, regras e necessidades em uma proposta técnica clara."],
+      ["02", "Construo e integro", "Desenvolvo APIs, interfaces, integrações e fluxos de dados com foco em manutenção."],
+      ["03", "Valido a entrega", "Uso testes, revisão, depuração e automação de entrega para reduzir riscos."],
+    ],
+  },
+  experienceLabel: "01 · Experiência", experienceTitle: "Experiência profissional",
+  experienceCopy: "Atuação em produtos corporativos, automação de processos, integrações e dados.",
+  experience: [
+    { period: "mar. 2026 — set. 2026", company: "Dali", role: "Desenvolvedor Full Stack · PJ", text: "Criei mais de 20 fluxos em uma plataforma no-code de automação, desenvolvendo serviços Python/Django, APIs REST, regras condicionais e processamento de dados. Implementei mais de 3 integrações, incluindo WhatsApp, para atendimento e vendas.", practices: "Escrevi mais de 10 testes com Pytest, mocks e fixtures para validar entradas incompletas e falhas de integração. Trabalhei com Redis, Kubernetes, Docker, GitHub Actions e pull requests.", tags: ["Python", "Django", "APIs REST", "Pytest", "CI/CD"] },
+    { period: "mar. 2025 — abr. 2026", company: "GIS Tecnologia", role: "Desenvolvedor Full Stack · PJ", text: "Mantive e evoluí 2 sistemas corporativos e financeiros em produção com C#/.NET, APIs REST e regras de negócio. Desenvolvi funcionalidades com HTML, CSS e JavaScript, integrando interfaces, serviços e bancos relacionais.", practices: "Modelei dados, investiguei falhas, otimizei consultas SQL e participei de revisões de código.", tags: ["C#/.NET", "JavaScript", "SQL", "APIs REST", "Git"] },
+    { period: "set. 2025 — mar. 2026", company: "CAESB", role: "Estagiário em Análise e Desenvolvimento", text: "Automatizei tarefas repetitivas, reduzindo em mais de 80% o tempo de execução e atendendo mais de 6 pessoas. Desenvolvi rotinas em Java, C# e Python para processos e relatórios internos.", practices: "Consultei e processei dados em SQL Server, colaborei em um projeto React/Python e utilizei Power Automate para automação e relatórios.", tags: ["Java", "C#", "Python", "React", "SQL Server"] },
+    { period: "nov. 2024 — jan. 2025", company: "Bincom Global", role: "Desenvolvedor de Software · Voluntariado remoto", text: "Apoiei o desenvolvimento e a manutenção de aplicações web com C#/.NET, incluindo operações CRUD em SQL Server.", practices: "Apliquei fundamentos de HTML, CSS e JavaScript no desenvolvimento web em colaboração com a equipe.", tags: ["C#", ".NET", "SQL Server", "HTML/CSS", "JavaScript"] },
+  ],
+  educationLabel: "02 · Formação", educationTitle: "Formação acadêmica",
+  education: [
+    { period: "out. 2026 — atual", course: "Pós-graduação em Engenharia de Software", institution: "Universidade Católica de Brasília (UCB)", detail: "Aprofundamento em arquitetura, qualidade de software e práticas de engenharia." },
+    { period: "concluído em maio de 2026", course: "Tecnólogo em Análise e Desenvolvimento de Sistemas", institution: "Universidade Católica de Brasília (UCB)", detail: "Formação em desenvolvimento de software, análise de sistemas e bancos de dados." },
+  ],
+  projectsLabel: "03 · Projetos", projectsTitle: "Projetos técnicos", projectsCopy: "Projetos usados para praticar decisões de arquitetura, integração, testes e operação de aplicações.", repository: "Ver repositório",
+  projects: [
+    { title: "CreditHub", purpose: "Plataforma de gestão de crédito", description: "Projeto Java que explora um fluxo de crédito com API REST, autenticação, banco relacional e processamento assíncrono.", details: ["Mensageria com RabbitMQ", "Padrão Outbox, DLQ e consumidores idempotentes", "Testes com Testcontainers e observabilidade com Prometheus/Grafana"], stack: ["Java 21", "Spring Boot", "PostgreSQL", "RabbitMQ", "Docker"], link: "https://github.com/Augustossn/credit-hub" },
+    { title: "Automation Center", purpose: "Central de automação de processos", description: "Aplicação para organizar automações e integrações, com APIs, processamento assíncrono e acompanhamento das operações.", details: ["Serviços Python/Django", "Tarefas assíncronas e eventos", "Testes com Pytest, Docker e dados em PostgreSQL"], stack: ["Python", "Django", "Kafka", "Celery", "Redis"], link: "https://github.com/Augustossn/automation-center" },
+    { title: "MaintainFlow", purpose: "Gestão de manutenção", description: "Projeto full stack voltado à organização de manutenções, com domínio separado da infraestrutura e integrações por mensagem.", details: ["Clean Architecture com ASP.NET Core", "Persistência com EF Core e SQL Server", "Testes unitários, integração e interface React"], stack: ["C#", ".NET 8", "SQL Server", "React", "RabbitMQ"], link: "https://github.com/Augustossn/maintainflow" },
+    { title: "SalvaDocs", purpose: "Gestão de documentos", description: "Aplicação full stack para organizar documentos e conectar uma interface baseada em componentes a serviços de back-end.", details: ["Componentes em Angular", "Serviços Node.js e APIs REST", "Integração entre front-end e back-end"], stack: ["Angular", "Node.js", "TypeScript", "REST"], link: "https://github.com/Szervinsk/SalvaDocs" },
+  ],
+  skillsLabel: "04 · Tecnologias", skillsTitle: "Tecnologias com que trabalho",
+  skills: [
+    { title: "Back-end", items: ["Java", "Spring Boot", "C#/.NET", "ASP.NET Core", "Python", "Django", "Node.js", "APIs REST"] },
+    { title: "Front-end", items: ["React", "TypeScript", "JavaScript", "Angular", "Vue 3", "HTML/CSS", "SASS"] },
+    { title: "Dados", items: ["PostgreSQL", "SQL Server", "MySQL", "H2", "SQL", "Flyway", "Modelagem relacional"] },
+    { title: "Qualidade e entrega", items: ["JUnit", "xUnit", "Pytest", "Testcontainers", "Docker", "GitHub Actions", "CI/CD", "Swagger/OpenAPI"] },
+  ],
+  contact: { label: "05 · Contato", title: "Disponível para oportunidades em desenvolvimento full stack.", email: "Falar por e-mail", location: "Brasília, DF · atuação remota" },
+  footer: "Desenvolvido com foco em conteúdo, clareza e acessibilidade.",
+  notFound: "Página não encontrada", home: "Voltar ao início",
+};
+
+export const en: typeof pt = {
+  nav: ["Experience", "Education", "Projects", "Technologies"],
+  contactLabel: "Contact", openMenu: "Open menu", closeMenu: "Close menu", languageLabel: "Portfolio language",
+  title: "Augusto Soares | Full Stack Developer",
+  description: "Augusto Soares's portfolio: full stack development, APIs, integrations, and process automation.",
+  hero: {
+    eyebrow: "Full Stack Developer · Brasília, Brazil",
+    description: "Developer working on backend services, integrations, automation, and web interfaces. I work with Java, Python/Django, C#/.NET, React, Angular, and relational databases.",
+    projects: "View projects", resume: "Resume (Portuguese)", work: "How I work",
+    steps: [
+      ["01", "Understand the context", "Turn processes, business rules, and requirements into a clear technical proposal."],
+      ["02", "Build and integrate", "Develop APIs, interfaces, integrations, and data workflows with maintainability in mind."],
+      ["03", "Validate the delivery", "Use testing, code reviews, debugging, and delivery automation to reduce risk."],
+    ],
+  },
+  experienceLabel: "01 · Experience", experienceTitle: "Professional experience",
+  experienceCopy: "Work on business applications, process automation, integrations, and data.",
+  experience: [
+    { period: "Mar. 2026 — Sep. 2026", company: "Dali", role: "Full Stack Developer · Independent contractor", text: "Created more than 20 workflows on a no-code automation platform, developing Python/Django services, REST APIs, conditional business rules, and data processing. Implemented more than 3 integrations, including WhatsApp, for customer service and sales.", practices: "Wrote more than 10 Pytest tests with mocks and fixtures to validate incomplete inputs and integration failures. Worked with Redis, Kubernetes, Docker, GitHub Actions, and pull requests.", tags: ["Python", "Django", "REST APIs", "Pytest", "CI/CD"] },
+    { period: "Mar. 2025 — Apr. 2026", company: "GIS Tecnologia", role: "Full Stack Developer · Independent contractor", text: "Maintained and enhanced 2 production corporate and financial systems using C#/.NET, REST APIs, and business logic. Built HTML, CSS, and JavaScript features connecting interfaces, services, and relational databases.", practices: "Modeled data, investigated defects, optimized SQL queries, and participated in code reviews.", tags: ["C#/.NET", "JavaScript", "SQL", "REST APIs", "Git"] },
+    { period: "Sep. 2025 — Mar. 2026", company: "CAESB", role: "Systems Analysis and Development Intern", text: "Automated repetitive tasks, reducing execution time by more than 80% and supporting more than 6 people. Developed Java, C#, and Python routines for internal processes and reporting.", practices: "Queried and processed SQL Server data, collaborated on a React/Python project, and used Power Automate for automation and reporting.", tags: ["Java", "C#", "Python", "React", "SQL Server"] },
+    { period: "Nov. 2024 — Jan. 2025", company: "Bincom Global", role: "Software Developer · Remote volunteer", text: "Supported C#/.NET web application development and maintenance, including SQL Server CRUD operations.", practices: "Applied HTML, CSS, and JavaScript fundamentals while collaborating with the team on web development.", tags: ["C#", ".NET", "SQL Server", "HTML/CSS", "JavaScript"] },
+  ],
+  educationLabel: "02 · Education", educationTitle: "Education",
+  education: [
+    { period: "Oct. 2026 — present", course: "Postgraduate Studies in Software Engineering", institution: "Universidade Católica de Brasília (UCB)", detail: "Further study in architecture, software quality, and engineering practices." },
+    { period: "completed May 2026", course: "Technology Degree in Systems Analysis and Development", institution: "Universidade Católica de Brasília (UCB)", detail: "Education in software development, systems analysis, and databases." },
+  ],
+  projectsLabel: "03 · Projects", projectsTitle: "Engineering projects", projectsCopy: "Projects for exploring architecture decisions, integrations, testing, and application operations.", repository: "View repository",
+  projects: [
+    { ...pt.projects[0], purpose: "Credit management platform", description: "A Java project exploring a credit workflow with a REST API, authentication, a relational database, and asynchronous processing.", details: ["RabbitMQ messaging", "Outbox pattern, DLQ, and idempotent consumers", "Testcontainers tests and Prometheus/Grafana observability"] },
+    { ...pt.projects[1], purpose: "Process automation hub", description: "An application for organizing automation and integrations, with APIs, asynchronous processing, and operation tracking.", details: ["Python/Django services", "Asynchronous tasks and events", "Pytest tests, Docker, and PostgreSQL data storage"] },
+    { ...pt.projects[2], purpose: "Maintenance management", description: "A full stack maintenance management project with domain logic separated from infrastructure and message-based integrations.", details: ["Clean Architecture with ASP.NET Core", "Persistence with EF Core and SQL Server", "Unit and integration tests, with a React interface"] },
+    { ...pt.projects[3], purpose: "Document management", description: "A full stack application for organizing documents and connecting a component-based interface to backend services.", details: ["Angular components", "Node.js services and REST APIs", "Frontend and backend integration"] },
+  ],
+  skillsLabel: "04 · Technologies", skillsTitle: "Technologies I work with",
+  skills: [
+    { ...pt.skills[0], title: "Backend", items: pt.skills[0].items.map(item => item === "APIs REST" ? "REST APIs" : item) },
+    { ...pt.skills[1], title: "Frontend" },
+    { ...pt.skills[2], title: "Data", items: pt.skills[2].items.map(item => item === "Modelagem relacional" ? "Relational modeling" : item) },
+    { ...pt.skills[3], title: "Quality and delivery" },
+  ],
+  contact: { label: "05 · Contact", title: "Available for full stack development opportunities.", email: "Get in touch", location: "Brasília, Brazil · remote work" },
+  footer: "Built with a focus on content, clarity, and accessibility.",
+  notFound: "Page not found", home: "Return to home",
+};

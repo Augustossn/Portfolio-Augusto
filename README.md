@@ -4,6 +4,16 @@ Um **portfólio pessoal moderno** desenvolvido como **Single Page Application (S
 
 ---
 
+## Idiomas
+
+O seletor PT/EN no cabeçalho traduz todas as seções e mantém a preferência neste navegador.
+
+- Português: https://portfolio-augusto-ruddy.vercel.app/?lang=pt
+- English: https://portfolio-augusto-ruddy.vercel.app/?lang=en
+
+O parâmetro lang do link tem prioridade sobre a preferência salva. Os textos ficam em src/lib/portfolio-content.ts; o download do currículo continua identificado como português.
+
+---
 ## 🎨 Conceito Visual
 
 O projeto segue uma estética **Glassmorphism em Dark Mode**, utilizando:
